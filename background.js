@@ -1,7 +1,4 @@
-
-
-
-function getTargetTab(openTabs, direction) {
+const getTargetTab = (openTabs, direction) => {
   let targetTab
   direction == "prev" ?  
     targetTab = openTabs.find(tab => tab.index === currentTab.index - 1) : 
@@ -21,7 +18,7 @@ chrome.commands.onCommand.addListener((command) => {
   }
   const direction = DIRECTION[command] // determine which direction on the tab stack to traverse
   let targetTab
-  chrome.tabs.query({}, (tabs) => {
+  chrome.tabs.query({}).then((tabs) => {
     let currTab = tabs.find(t=>t.active)
     if (command === "duplicate_tab") { // did we ask for a tab to be duplicated?
       chrome.tabs.duplicate(currTab.id, (t) => {})
@@ -39,10 +36,6 @@ chrome.commands.onCommand.addListener((command) => {
       active: true,
       highlighted: true
     }
-
     chrome.tabs.update(targetTab.id,updateProperties,null)
   }) 
-    
-
-
 })

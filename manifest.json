@@ -1,8 +1,7 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "background": {
-    "scripts": ["background.js"],
-    "persistent": true
+    "service_worker": "background.js"
   },
   "name": "Tab Stepper",
   "description": "For Chromium browsers (Brave) that support MRT navigation and still need to cycle through tabs by index. Also adds duplicate tab functionality",
