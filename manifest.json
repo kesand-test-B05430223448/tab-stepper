@@ -18,6 +18,8 @@
     "next_tab": {
       "suggested_key": {
         "default": "Alt+PageDown",
+        "chromeos": "Alt+PageDown",
+        "linux": "Alt+PageDown",
         "mac": "MacCtrl+PageDown"
       },
       "description": "Switch to the next tab in order."
@@ -25,6 +27,8 @@
     "prev_tab": {
       "suggested_key": {
         "default": "Alt+PageUp",
+        "chromeos": "Alt+PageUp",
+        "linux": "Alt+PageUp",
         "mac": "MacCtrl+PageUp"
       },
       "description": "Switch to the previous tab in order."
@@ -32,6 +36,8 @@
     "duplicate_tab": {
       "suggested_key": {
         "default": "Ctrl+Shift+K",
+        "chromeos": "Ctrl+Shift+K",
+        "linux": "Ctrl+Shift+K",
         "mac": "MacCtrl+Shift+K"
       },
       "description": "Duplicate current tab"
