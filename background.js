@@ -11,15 +11,13 @@ const getTargetTab = (openTabs, direction) => {
 }
 
 
-chrome.commands.onCommand.addListener((command) => {
+chrome.commands.onCommand.addListener((command, currTab) => {
   const DIRECTION = {
     "next_tab": "next",
     "prev_tab": "prev"
   }
   const direction = DIRECTION[command] // determine which direction on the tab stack to traverse
-  let targetTab
-  chrome.tabs.query({}).then((tabs) => {
-    let currTab = tabs.find(t=>t.active)
+  chrome.tabs.query({windowId:currTab.windowId}).then((tabs) => {
     if (command === "duplicate_tab") { // did we ask for a tab to be duplicated?
       chrome.tabs.duplicate(currTab.id, (t) => {})
       return // break out of the callback function from the tab query
