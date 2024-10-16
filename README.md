@@ -17,4 +17,4 @@
 
 ## TODO
 
-🤷‍♂️
+* Manifest v3 support
