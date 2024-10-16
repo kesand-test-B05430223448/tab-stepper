@@ -14,3 +14,7 @@
 |<kbd>Alt</kbd>+<kbd>PageDown</kbd> | Next Tab     |
 |<kbd>Alt</kbd>+<kbd>PageUp</kbd>   | Previous Tab |
 |<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> | Duplicate Tab |
+
+## TODO
+
+🤷‍♂️
