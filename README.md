@@ -14,8 +14,3 @@
 |<kbd>Alt</kbd>+<kbd>PageDown</kbd> | Next Tab     |
 |<kbd>Alt</kbd>+<kbd>PageUp</kbd>   | Previous Tab |
 |<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> | Duplicate Tab |
-
-## TODO
-
-* Manifest v3 support
-* Possibly implement better <kdb>Ctrl</kbd>+<kbd>Tab</kbd> functionality
