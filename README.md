@@ -19,4 +19,4 @@
 
 * Manifest v3 support
 * Possibly implement better <kdb>Ctrl</kbd>+<kbd>Tab</kbd> functionality
-* Charge $0.25
+* Charge ~$0.25~ $1.00
