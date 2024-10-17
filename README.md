@@ -18,3 +18,4 @@
 ## TODO
 
 * Manifest v3 support
+* Possibly implement better <kdb>Ctrl</kbd>+<kbd>Tab</kbd> functionality
